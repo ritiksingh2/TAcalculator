@@ -1,0 +1,51 @@
+<div id="container">
+  <h1>    TA   Calculator     GCOEA</h1>
+  <div id="calculator">
+<head><link rel="stylesheet" type="text/css" href="ccccca.css"></head>
+
+    <form>
+      <p>How much marks in mid sem ?
+        <p>
+          Marks <input id="billamt" type="text" placeholder="Marks"> 
+
+          <p>How was the viva performance and class attentivity?
+            <p>
+              <select id="serviceQual">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="1.0">100&#37; &#45; Outstanding</option>
+            <option value="0.85">80&#37; &#45; Good</option>
+            <option value="0.75">75&#37; &#45; It was OK</option>
+            <option value="0.65">60&#37; &#45; Satisfactory</option>
+            <option value="0.05">5&#37; &#45; Terrible NO scope of improvement</option>
+        </select>
+        <p>Attendance in nearest round figure?
+            <p>
+              <select id="classAttend">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="1.00">100&#37; &#45; regular </option>
+            <option value="0.85">85&#37; &#45; better</option>
+            <option value="0.75">75&#37; &#45; good</option>
+            <option value="0.6">60&#37; &#45; in case of medical emergency</option>
+            <option value="0.00001"> >60&#37; &#45; not at  regular </option>
+        </select>
+        <p> Enter the roll number of the student 
+          <input type="text" id="rollNo" placeholder="Roll number">
+        </p>
+
+    </form>
+    <p></p>
+    
+    <button type="button" id="calculate">Calculate!</button>
+
+  </div>
+  <!--calculator end-->
+  <div id="totalTip">
+    <sup>marks</sup><span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+  <!--totalTip end-->
+
+</div>
+<!--container end-->
+
+<script type="text/javascript" src="calculator.js"></script>
